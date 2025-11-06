@@ -6,7 +6,7 @@ authors = ["Stock Trading Team <team@example.com>"]
 packages = [{ include = "app" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 fastapi = "^0.111.0"
 uvicorn = { extras = ["standard"], version = "^0.30.0" }
 pydantic = "^2.7.1"
