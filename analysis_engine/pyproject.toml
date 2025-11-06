@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "analysis-engine"
+version = "0.1.0"
+description = "Indicator analysis engine"
+authors = ["Stock Trading Team <team@example.com>"]
+packages = [{ include = "engine" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
