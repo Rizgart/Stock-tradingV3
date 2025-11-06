@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background: var(--background, #121212);
+  color: var(--color, #f3f3f3);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #20232a;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.disclaimer {
+  grid-column: 1 / span 2;
+  padding: 1rem;
+  background: #181a1f;
+}
+
+.settings {
+  display: grid;
+  gap: 1rem;
+  max-width: 480px;
+}
+
+.settings input,
+.settings select {
+  width: 100%;
+}

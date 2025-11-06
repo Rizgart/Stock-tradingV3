@@ -1,0 +1,18 @@
+appId: com.stock.trading.desktop
+productName: StockTradingDesktop
+files:
+  - "dist/**/*"
+  - "electron-main.js"
+  - "preload.js"
+  - "package.json"
+mac:
+  target:
+    - dmg
+  hardenedRuntime: true
+  entitlements: build/entitlements.mac.plist
+win:
+  target:
+    - msix
+  publisherName: "CN=Stock Trading"
+extraMetadata:
+  main: electron-main.js
