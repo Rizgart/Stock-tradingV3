@@ -6,7 +6,7 @@ authors = ["Stock Trading Team <team@example.com>"]
 packages = [{ include = "engine" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 pandas = "^2.2.2"
 numpy = "^1.26.4"
 fastapi = "^0.111.0"
